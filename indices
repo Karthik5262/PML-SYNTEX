@@ -1,0 +1,32 @@
+With do values the counter takes the value of each array element in turn:
+
+!Pump[1] = 'Fred'
+!Pump[20] = 'Tom'
+!Pump[10] = 'Jim'
+do !Name values !Pump
+Sp array element is $!Name
+enddo
+
+This will produce the following output:
+
+Array Element is Fred
+Array Element is Jim
+Array Element is Tom
+
+On exit from a do values loop PML destroys the loop counter variable.
+
+With do indices the counter takes the value of each array subscript at which an array element is stored:
+
+!Pump[1] = 'Fred'
+!Pump[20] = 'Tom'
+!Pump[10] = 'Jim'
+do !IN indices !Pump
+ !Value = !Pump[!IN]
+SP Array Element $!N is $!Value
+enddo
+
+This will produce the following output:
+
+Array Element 1 is Fred
+Array Element 10 is Jim
+Array Element 20 is Tom
