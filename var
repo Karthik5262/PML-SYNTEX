@@ -1,1 +1,16 @@
 var !branlist coll all bran for $!pip
+
+
+ var !branunn coll all branch for ce 
+ Do !unnan values !branunn
+   $!unnan unn
+ enddo
+
+var !auto coll all atta with matchw(name,'*-*-EL-*') for ce
+var !name eval name for all from !auto
+
+Var !lck coll all bran mem for ce
+
+var !validcomps Eval Tanswer for all SELE for Pspec of PIPE 
+
+var !gtwork coll $!dbna for ce
