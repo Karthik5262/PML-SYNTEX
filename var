@@ -14,3 +14,7 @@ Var !lck coll all bran mem for ce
 var !validcomps Eval Tanswer for all SELE for Pspec of PIPE 
 
 var !gtwork coll $!dbna for ce
+
+var !allatta Eval name for all ATTA FOR $!bran
+
+var !spkbrkAtta Coll All ATTA with spkbrk FOR $!bran
