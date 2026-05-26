@@ -22,3 +22,7 @@ var !spkbrkAtta Coll All ATTA with spkbrk FOR $!bran
 var !tubis Coll all TUBI within volume $!atta for $!bran
 
 var !collpipmem coll all bran mem with matchwi(name of ZONE,'/PIPE-M0C-L1-DC')
+
+var !getrating rating of spec of spr
+
+var !collpspec pspec of pip
