@@ -1,0 +1,27 @@
+!pipespec = pspec of pip
+!compspow = !!ce.spow
+
+If (!pipespec EQ !compspow) then 
+  !getmaterial = 'SPEC CORRECT'
+ else 
+  !getmaterial = 'CHECK SPEC ERROR'
+ endif 
+
+
+if(!!CE.Type EQ 'TUBI') then
+	!getquantity = !!CE.ltlen
+else
+	!getquantity = 0
+endif
+
+
+
+if(!!CE.Type EQ 'TEE' or !!CE.Type EQ 'OLET') then
+	var !getmemsiz3 p3bor
+	handle (2,201) (2,208)
+		!getmemsiz3 = '0mm'
+	endhandle
+else
+	!getmemsiz3 = '0mm'
+endif
+
